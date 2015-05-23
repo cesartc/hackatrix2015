@@ -14,10 +14,14 @@
 							    <label for="exampleInputPassword1">Descripción</label>
 							    <input  class="form-control" name="description" id="Descripción" placeholder="Ingresar Descripción">
 							  </div>
-							  	  <div class="form-group" ng-model="post.category">
-							    <label for="exampleInputEmail1">Categoría</label>
-							    <input  class="form-control" name="category" id="exampleInputEmail1" placeholder="Ingresar Categoría">
-							  </div>
+								<div class="form-group" ng-model="post.category">
+									<label for="exampleInputEmail1">Categoría</label>
+									<select class="form-control"  name="category" id="category">
+										<option value="electro">Electronicos </option>
+										<option value="comestibles">Comestibles </option>
+										<option value="ropa">Ropa </option>
+									</select>
+								</div>
 							  <div class="form-group" ng-model="post.address">
 							    <label for="exampleInputPassword1">Dirección</label>
 							    <input type="password" class="form-control" name="address" id="Dirección" placeholder="Ingresar Dirección">
@@ -35,7 +39,7 @@
 							  
 							  </div>
 							  -->
-							  <button ng-click="postNewItem" type="button" class="btn btn-default">Enviar</button>
+							  <button ng-click="postNewItem();" type="button" class="btn btn-default">Enviar</button>
 							</form>
 
 						</div>
