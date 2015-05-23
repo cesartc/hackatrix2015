@@ -2,22 +2,21 @@
 (function(){
 	angular.module('app')
 		.controller('PageDetalleController', 
-			['$scope','$route','$http','$timeout',
-			function($scope,$route,$http,$timeout){
+			['$scope','$route','$http','$timeout','$routeParams',
+			function($scope,$route,$http,$timeout,$routeParams){
 				
 				console.log("lista de ofertas por categoria");
 				$scope.setLoadingStatus(false);
 				$('.modal-backdrop').remove();
 
-				$scope.items2 =[];
+				$scope.itemDetalle= {};
 
 				var grid;
 
-				$http({method:'GET', url:'http://172.28.13.120/cazaofertas/public/index.php/offer', params:{slug:'all'}})
+				$http({method:'GET', url:'http://172.28.13.120/cazaofertas/public/index.php/offer', params:{id:$routeParams.id}}) 
 				.success(function(data){
-					console.log($scope.items2);
-
-					$scope.items2 = data;
+					$scope.itemDetalle = data;
+					console.log($scope.itemDetalle,data);
 
 					$timeout(function(){	
 
