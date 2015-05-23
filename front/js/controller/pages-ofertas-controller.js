@@ -11,9 +11,10 @@
 
 				var grid;
 
-				$http({method:'POST', url:'data/ofertas.php', params:{slug:'all'}})
+				// $http({method:'POST', url:'data/ofertas.php', params:{slug:'all'}})				
+				$http({method:'GET', url:'http://172.28.13.120/cazaofertas/public/index.php/offer', params:{cat:'all'}})
 				.success(function(data){
-					console.log($scope.items);
+					// console.log($scope.items);
 
 					$scope.items = data;
 
@@ -30,15 +31,14 @@
 				});
 
 				$scope.loadMore= function(){
-					$http({method:'POST', url:'data/ofertas.php', params:{slug:'all'}})
+				$http({method:'GET', url:'http://172.28.13.120/cazaofertas/public/index.php/offer', params:{cat:'all'}})
 					.success(function(data){
 
-						console.log("cargar mas", data);
+						// console.log("cargar mas", data);
 						$scope.items = $scope.items.concat(data);
-						console.log(grid);
 
 						$timeout(function(){
-							
+
 							// grid = $('.grid').isotope({
 							//   itemSelector: '.grid-item',
 							//   layoutMode: 'fitRows',
