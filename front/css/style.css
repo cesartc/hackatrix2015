@@ -1,0 +1,14 @@
+@charset "utf-8";
+/**
+* @description	Standard Layout
+* @author		Nombre_programador
+* @version		1.0
+*/
+
+body{
+
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400; 
+	background-color: #6f6161;
+}
+

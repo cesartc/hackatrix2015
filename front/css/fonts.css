@@ -1,0 +1,28 @@
+@charset "utf-8";
+/**
+* @description	Standard Layout
+* @author		Nombre_programador
+* @version		1.0
+*/
+
+@font-face {
+	font-family: 'rimouski';
+	src:url('../fonts/sb.ttf') format('truetype'), url('../fonts/sb.woff') format('woff');
+	font-weight: bold;
+	font-style: bold;
+}
+
+@font-face {
+	font-family: 'rimouski';
+	src:url('../fonts/regular.ttf') format('truetype'), url('../fonts/regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'rimouski';
+	src:url('../fonts/light.ttf') format('truetype'), url('../fonts/light.woff') format('woff');
+	font-weight:lighter;
+	font-style: lighter;
+}

@@ -1,0 +1,51 @@
+
+
+body {
+
+}
+body, html {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #ffffff;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.btns{
+	display: block;
+	background-color: transparent;
+	border: none;	
+}
+.btns:hover{
+	opacity: 0.8;
+}
+
+.nopadding{
+	padding: 0;
+}
+.nomargin{
+	margin: 0;
+}
+
+
+label.error{
+	display: none !important;
+}
+form input.error{
+	border: 1px solid #EC8989 !important;
+}
+form select.error{
+	border: 1px solid #EC8989 !important;
+}
+form textarea.error{
+	border: 1px solid #EC8989 !important;
+}
+form input[type="checkbox"].error{
+	outline: 1px solid #EC8989;
+}

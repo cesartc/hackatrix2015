@@ -1,0 +1,12 @@
+
+
+
+
+@media (min-width: 875px){
+	.navbar-default .navbar-nav > li > a{
+		min-width: 140px;
+	}
+
+}
+
+
