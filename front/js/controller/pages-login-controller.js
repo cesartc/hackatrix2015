@@ -6,7 +6,8 @@
 			function($scope,$route){
 
 				console.log("login");
-				
+				$scope.setLoadingStatus(false);
+					
 
 		}])
 

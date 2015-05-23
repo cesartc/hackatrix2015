@@ -6,6 +6,7 @@
 			function($scope,$route,$http,$timeout){
 				
 				console.log("lista de ofertas por categoria");
+				$scope.setLoadingStatus(false);
 
 				$scope.items2 =[];
 

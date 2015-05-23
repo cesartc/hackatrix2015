@@ -6,6 +6,7 @@
 			function($scope,$route){
 
 				console.log("index, controllador general");
+				$scope.setLoadingStatus(false);
 				
 
 		}])

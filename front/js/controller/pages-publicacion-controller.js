@@ -6,6 +6,7 @@
 			function($scope,$route){
 
 				console.log("formalario de registro de publicacion");
+				$scope.setLoadingStatus(false);
 				
 
 		}])
