@@ -10,14 +10,41 @@
 
 
 					      		<div align="center">
-					      			<h1>{{itemDetalle.title}}</h1>
-						 		<img ng-src="http://172.28.13.120/{{itemDetalle.photo}}">
+					      			<h2>{{itemDetalle.title}}</h2>
+						 		<img style="max-width:400px; width:100%" ng-src="http://172.28.13.120/{{itemDetalle.photo}}">
 
 						 				
 						 		
 						 		</div>
 						 		<div clas="container" align="center" > 
-								<h3 ng-click="comentarioDetalle=1">COMENTARIOS .... </h3>
+
+
+						 			<button ng-click="comentarioDetalle=1" type="button" class="btn btn-default" aria-label="Left Align">
+									  <span class="glyphicon glyphicon-align-left" aria-hidden="true">   COMENTARIOS</span>
+									</button>
+							
+									
+
+									<div  ng-show="comentarioDetalle==1" ng-controller="PageOfertasController">
+									<md-content>
+								    <md-list>
+								      <md-list-item style="align-text:left" class="md-3-line" ng-repeat="item in items">
+								       	
+
+								       	<ul class="list-group">
+  										<li class="list-group-item"><b>{{item.id}}   </b> {{item.description}}</li>
+											</ul>
+										
+								        <div class="md-list-item-text">
+								        
+								         
+								        </div>
+								        <md-divider md-inset ng-if="!$last"></md-divider>
+								      </md-list-item>
+								    </md-list>
+								  </md-content>
+								  </div>
+
 
 
 						      </div>
