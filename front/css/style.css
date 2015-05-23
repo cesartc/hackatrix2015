@@ -11,7 +11,12 @@ body{
 	font-weight: 400; 
 }
 
-
+.isotopo{
+	width: 100%;
+	max-width: 940px;
+	display: block;
+	margin: auto;
+}
 .grid-item { 
 	float: left;
 	width: 222px;
