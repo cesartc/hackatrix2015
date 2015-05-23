@@ -2,43 +2,36 @@
 (function(){
 	angular.module('app')
 		.controller('PageDetalleController', 
-			['$scope','$route',
-			function($scope,$route){
-
-				 var imagePath = 'http://placehold.it/150x150';
-				    $scope.messages = [{
-				      face : imagePath,
-				      what: 'Brunch this weekend?',
-				      who: 'Min Li Chan',
-				      when: '3:08PM',
-				      notes: " I'll be in your neighborhood doing errands"
-				    }, {
-				      face : imagePath,
-				      what: 'Brunch this weekend?',
-				      who: 'Min Li Chan',
-				      when: '3:08PM',
-				      notes: " I'll be in your neighborhood doing errands"
-				    }, {
-				      face : imagePath,
-				      what: 'Brunch this weekend?',
-				      who: 'Min Li Chan',
-				      when: '3:08PM',
-				      notes: " I'll be in your neighborhood doing errands"
-				    }, {
-				      face : imagePath,
-				      what: 'Brunch this weekend?',
-				      who: 'Min Li Chan',
-				      when: '3:08PM',
-				      notes: " I'll be in your neighborhood doing errands"
-				    }, {
-				      face : imagePath,
-				      what: 'Brunch this weekend?',
-				      who: 'Min Li Chan',
-				      when: '3:08PM',
-				      notes: " I'll be in your neighborhood doing errands"
-				    }];
+			['$scope','$route','$http','$timeout',
+			function($scope,$route,$http,$timeout){
 				
-				console.log("detalle");
+				console.log("lista de ofertas por categoria");
+
+				$scope.items2 =[];
+
+				var grid;
+
+				$http({method:'GET', url:'http://172.28.13.120/cazaofertas/public/index.php/offer', params:{slug:'all'}})
+				.success(function(data){
+					console.log($scope.items2);
+
+					$scope.items2 = data;
+
+					$timeout(function(){	
+
+						// grid = $('.grid').isotope({
+						//   itemSelector: '.grid-item',
+						//   layoutMode: 'fitRows',
+						//   gutter: 10
+						// });	
+						// console.log(grid);
+
+					});
+				});
+
+				
+
+
 
 		}])
 
