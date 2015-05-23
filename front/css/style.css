@@ -9,6 +9,15 @@ body{
 
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400; 
-	background-color: #6f6161;
 }
 
+
+.grid-item { 
+	float: left;
+	width: 222px; 
+	height: 350px;
+	border: 1px solid red;
+}
+.grid-item--width2 { 
+	width: 50%; 
+}
