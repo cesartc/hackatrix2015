@@ -2,7 +2,28 @@
 
 
 
-					<section class="view_wrapper">
-						<h1>GRID DE OFERTAS</h1>
+<section class="view_wrapper">
 
-					</section>
+	<div class="isotopo">
+		<div class="grid">
+		
+		  <div class="grid-item" ng-repeat="item in items">
+		  	{{item.id}} <br>
+		  	{{item.title}} <br>
+		  	{{item.foto}} <br>
+		  </div>
+
+
+		</div>
+
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12">
+				<button type="button" class="btn btn-primary" ng-click="loadMore();">Cargar más</button>
+			</div>
+		</div>
+		
+	</div>
+
+</section>
