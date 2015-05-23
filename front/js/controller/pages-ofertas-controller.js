@@ -24,10 +24,14 @@
 				});
 
 				$scope.loadMore= function(){
+
+				$scope.setLoadingStatus(true);
 				$http({method:'GET', url:'http://172.28.13.120/cazaofertas/public/index.php/offer', params:{cat:'all'}})
 					.success(function(data){
 
 						$scope.items = $scope.items.concat(data);
+						
+						$scope.setLoadingStatus(false);
 
 						$timeout(function(){
 
@@ -37,6 +41,7 @@
 
 					});
 				}
+
 
 
 
