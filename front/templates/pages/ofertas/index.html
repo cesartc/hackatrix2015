@@ -20,10 +20,18 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Todos</a></li>
-              <li><a href="#">Electronicos</a></li>
-              <li><a href="#">Comestibles</a></li>
-              <li><a href="#">Calzados</a></li>
+              <li class="">
+                <a href="#/ofertas/todos">Todos</a>
+              </li>
+              <li>
+                <a href="#/ofertas/electronicos" >Electronicos</a>
+              </li>
+              <li>
+                <a href="#/ofertas/comestibles">Comestibles</a>
+              </li>
+              <li>
+                <a href="#/ofertas/calzados">Calzados</a>
+              </li>
             </ul>
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
@@ -34,11 +42,11 @@
 	<div class="isotopo clearfix">
 		<div class="grid">
 		
-		  <div class="grid-item" ng-repeat="item in items">
-		  <div item-grilla>
+    <div class="grid-item" ng-repeat="item in items">
+        <div item-grilla>
 
-		  </div>
-		  </div>
+        </div>
+    </div>
 
 
 
@@ -49,6 +57,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
+        <br>
 				<button type="button" class="btn btn-primary btn_cargar_mas center-block" ng-click="loadMore(); ">Cargar más</button>
 			</div>
 		</div>
