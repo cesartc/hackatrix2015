@@ -14,10 +14,22 @@ body{
 
 .grid-item { 
 	float: left;
-	width: 222px; 
+	width: 222px;
 	height: 350px;
-	border: 1px solid red;
+	margin: 5px 5px;
+	overflow: hidden;
+	box-shadow: 0px 0px 6px -1px rgba(128, 172, 216, 0.5);
+	border: 1px solid #D2DAE2;
+	border-radius: 5px;
+	padding: 10px;
 }
 .grid-item--width2 { 
 	width: 50%; 
+}
+.grid-item{
+
+}
+.grid-item img{
+	width: 100%;
+	max-width: 
 }
