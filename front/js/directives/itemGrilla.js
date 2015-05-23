@@ -1,7 +1,7 @@
 
 (function(){
 	angular.module('app')
-		.directive('ejemplo',['$http','ParseHtml',function($http,$ParseHtml){
+		.directive('itemGrilla',['$http','ParseHtml',function($http,$ParseHtml){
 
 			return{
 				restrict:'A',
