@@ -1,24 +1,25 @@
 
  <div class="panel panel-default">
- 			<img ng-src="{{item.photo}}" class="face" alt="{{item.photo}}">
-			<div class="md-list-item-text">
-			 
+
+ 		
 
 			 
 			  <div class="panel-body">
-			  	<div class="col--xs2 col-md-2">
-			   <button type="button" class="btn btn-default btn-lg">
-				  <span class="glyphicon glyphicon-star" aria-hidden="true">  </span> 
-				</button>
-				</div>
-				<div class="col-xs-10 col-md-10">
-				 <b>{{item.title}}</b>
-				 </div>
+			  		<a ng-href="#/detalle/{{item.id}}">
+			 	<img ng-src="http://172.28.13.120/{{item.photo}}" class="face" alt="{{item.photo}}">
+			</a>
+				
 			  </div>
 			
-
+			   <div class="panel-footer"> <button type="button" class="btn btn-default btn-lg">
+				  <span class="glyphicon glyphicon-star" aria-hidden="true">     </span> 
+				</button>
+				
+				
+				 <b>{{item.title}}</b></div>
 
 
 			 
+
 
 </div>
