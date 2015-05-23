@@ -7,6 +7,7 @@
 				
 				console.log("lista de ofertas por categoria");
 				$scope.setLoadingStatus(false);
+				$('.modal-backdrop').remove();
 
 				$scope.items2 =[];
 

@@ -3,7 +3,7 @@
 	angular.module('app')
 		.config(function($routeProvider){
 			$routeProvider
-				.when('/publicacion',{
+				.when('/publicacion/:categoria',{
 					templateUrl:'templates/pages/publicacion/index.html',
 					controller:'PagePublicacionController',
 					controllerAs:'currentController'

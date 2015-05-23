@@ -14,12 +14,10 @@
 				// $http({method:'POST', url:'data/ofertas.php', params:{slug:'all'}})				
 				$http({method:'GET', url:'http://172.28.13.120/cazaofertas/public/index.php/offer', params:{cat:$routeParams.categoria, page:$scope.page}})
 				.success(function(data){
-					// console.log($scope.items);
-
-					$scope.items = data;
-
-					$timeout(function(){	
-
+					console.log(data);
+					// $scope.items = data;
+					$scope.items = $scope.items.concat(data);
+					$timeout(function(){
 						$scope.setLoadingStatus(false);
 					});
 				});
@@ -43,6 +41,10 @@
 
 					});
 				}
+
+				$('.btn_publicar').on('click', function(){
+					$('.tool_tip').show();
+				})
 
 
 
