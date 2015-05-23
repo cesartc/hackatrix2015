@@ -9,6 +9,12 @@
 				$scope.setLoadingStatus(false);
 				
 
+					$scope.postNewItem= function(data){
+
+						console.log(data);
+						
+				}
+
 		}])
 
 
