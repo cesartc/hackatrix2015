@@ -9,10 +9,11 @@
 				$scope.setLoadingStatus(false);
 				
 
-					$scope.postNewItem= function(data){
-
-						console.log(data);
-						
+				$scope.postNewItem= function(data){
+					console.log("enviando")
+					console.log(data);
+					$('.form_pub').submit();
+					
 				}
 
 		}])
