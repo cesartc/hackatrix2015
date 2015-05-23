@@ -42,9 +42,13 @@
 					});
 				}
 
+<<<<<<< HEAD
 				$('.btn_publicar').on('click', function(){
 					$('.tool_tip').show();
 				})
+=======
+			
+>>>>>>> dec14b7b1de9c79fd33b88dc4c0adee52bd24280
 
 
 
