@@ -1,7 +1,7 @@
 
 (function(){
 	angular.module('app')
-		.controller('PageIndexController', 
+		.controller('PageInicioController', 
 			['$scope','$route',
 			function($scope,$route){
 

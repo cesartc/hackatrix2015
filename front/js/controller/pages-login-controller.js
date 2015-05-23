@@ -1,11 +1,11 @@
 
 (function(){
 	angular.module('app')
-		.controller('PageIndexController', 
+		.controller('PageLoginController', 
 			['$scope','$route',
 			function($scope,$route){
 
-				console.log("index, controllador general");
+				console.log("login");
 				
 
 		}])

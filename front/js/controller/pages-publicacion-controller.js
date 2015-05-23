@@ -1,11 +1,11 @@
 
 (function(){
 	angular.module('app')
-		.controller('PageIndexController', 
+		.controller('PagePublicacionController', 
 			['$scope','$route',
 			function($scope,$route){
 
-				console.log("index, controllador general");
+				console.log("formalario de registro de publicacion");
 				
 
 		}])

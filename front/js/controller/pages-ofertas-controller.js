@@ -1,12 +1,11 @@
 
 (function(){
 	angular.module('app')
-		.controller('PageIndexController', 
+		.controller('PageOfertasController', 
 			['$scope','$route',
 			function($scope,$route){
-
-				console.log("index, controllador general");
 				
+				console.log("lista de ofertas por categoria");
 
 		}])
 

@@ -16,7 +16,7 @@
 	<meta name="keywords" content="">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Opciones para compartir en Facebook -->
+	<!-- Opciones para compartir en Facebook --> 
 	<meta property="og:title" content="">
 	<meta property="og:description" content="">
 	<meta property="og:type" content="website">
@@ -64,19 +64,29 @@
    }(document, 'script', 'facebook-jssdk'));
 
 </script>
-<br>
-<br>
-<ul>
-	<li>
-<a ng-href="/#/inicio">inicio</a>
-		
-	</li>
-	<li>
-<a ng-href="/#/detalle">detalle</a>
-		
-	</li>
-</ul>
-<br>
+
+	<ul>
+		<li>
+			<a ng-href="#/inicio">loading</a>
+			
+		</li>
+		<li>
+			<a ng-href="#/ofertas/all">ofertas</a>
+			
+		</li>
+		<li>
+			<a ng-href="#/detalle/1">detalle</a>
+			
+		</li>
+		<li>
+			<a ng-href="#/login">Log in</a>
+			
+		</li>
+		<li>
+			<a ng-href="#/publicacion">publicar oferta</a>
+			
+		</li>
+	</ul>
 	
 		<div class=" clearfix ng-view">
 
@@ -107,7 +117,11 @@
 
 
 <script src="js/controller/pages-index-controller.js"></script>
+<script src="js/controller/pages-inicio-controller.js"></script>
+<script src="js/controller/pages-ofertas-controller.js"></script>
 <script src="js/controller/pages-detalle-controller.js"></script>
+<script src="js/controller/pages-login-controller.js"></script>
+<script src="js/controller/pages-publicacion-controller.js"></script>
 
 
 
