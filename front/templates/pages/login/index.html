@@ -1,8 +1,17 @@
-
-
-
-
-					<section class="view_wrapper">
-						<h1>LOGIN</h1>
-
-					</section>
+<section class="view_wrapper home-page-login">
+	<form name="projectForm" class="form-login">
+      <md-input-container class="md-icon-float" >
+      <!-- Use floating label instead of placeholder -->
+      <label>Usuario</label>
+      <ng-md-icon icon="perm_identity" size="35" style="fill: #000" class="name"></ng-md-icon>
+      <input ng-model="user.email" type="text">
+    </md-input-container>
+      <md-input-container class="md-icon-float" >
+      <!-- Use floating label instead of placeholder -->
+      <label>Clave</label>
+      <ng-md-icon icon="receipt" size="35" style="fill: #000" class="name"></ng-md-icon> 
+      <input ng-model="user.password" type="text">
+    </md-input-container>
+    <md-button class="md-raised md-primary" style="width:100%"  type="submit" ng-click="login(user)">Ingresar</md-button>
+  </form>
+</section>

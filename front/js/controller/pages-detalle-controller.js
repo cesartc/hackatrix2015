@@ -13,7 +13,7 @@
 
 				var grid;
 
-				$http({method:'GET', url:'http://172.28.13.120/cazaofertas/public/index.php/offer', params:{id:$routeParams.id}})
+				$http({method:'GET', url:'http://172.28.13.120/cazaofertas/public/index.php/offer', params:{id:$routeParams.id}}) 
 				.success(function(data){
 					console.log(data + "datacontrolador");
 
